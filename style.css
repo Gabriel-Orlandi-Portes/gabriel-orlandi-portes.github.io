@@ -197,3 +197,132 @@ h1 span{
   object-fit:cover;
   display:block;
 }
+/* ---------- TERMINAL (signature element) ---------- */
+ 
+.terminal{
+  width:360px;
+  max-width:100%;
+  background:var(--bg-card);
+  border:1px solid var(--border);
+  border-radius:12px;
+  overflow:hidden;
+  box-shadow:0 20px 60px rgba(0,0,0,0.4);
+}
+ 
+.terminal-bar{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  padding:12px 16px;
+  background:#0e1626;
+  border-bottom:1px solid var(--border);
+}
+ 
+.dot{
+  width:10px;
+  height:10px;
+  border-radius:50%;
+}
+ 
+.dot.red{background:#f87171;}
+.dot.yellow{background:var(--accent-2);}
+.dot.green{background:var(--accent);}
+ 
+.terminal-title{
+  margin-left:8px;
+  font-family:var(--font-mono);
+  font-size:12px;
+  color:var(--text-dim);
+}
+ 
+.terminal-body{
+  padding:20px;
+  font-family:var(--font-mono);
+  font-size:13.5px;
+  min-height:auto;
+}
+ 
+.terminal-body .line{
+  margin-bottom:10px;
+  white-space:normal;
+}
+ 
+.terminal-body .prompt{
+  color:var(--accent-2);
+  margin-right:8px;
+}
+ 
+.terminal-body .out{
+  color:var(--accent);
+}
+ 
+.cursor{
+  display:inline-block;
+  width:8px;
+  height:16px;
+  background:var(--accent);
+  animation:blink 1s step-end infinite;
+  vertical-align:middle;
+}
+ 
+@keyframes blink{
+  50%{opacity:0;}
+}
+
+/* ---------- SOBRE ---------- */
+
+.about-container{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 60px;
+    align-items: center;
+}
+
+.about-text{
+    flex: 1;
+    max-width: 650px;
+}
+
+.about-text p{
+    margin-bottom: 18px;
+}
+
+.about-container .terminal{
+    flex-shrink: 0;
+}
+ 
+/* ---------- SECTIONS ---------- */
+ 
+.section{
+  padding:90px 8%;
+  max-width:1200px;
+  margin:0 auto;
+}
+ 
+.section h2{
+  font-size:32px;
+  margin-bottom:28px;
+}
+ 
+.sub-heading{
+  margin-top:50px;
+}
+ 
+.section p{
+  color:var(--text-dim);
+  font-size:16px;
+  max-width:720px;
+  margin-bottom:14px;
+}
+ 
+.reveal{
+  opacity:0;
+  transform:translateY(24px);
+  transition:opacity 0.6s ease, transform 0.6s ease;
+}
+ 
+.reveal.visible{
+  opacity:1;
+  transform:none;
+}
+
