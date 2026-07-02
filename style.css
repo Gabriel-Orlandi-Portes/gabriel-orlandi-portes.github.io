@@ -304,6 +304,12 @@ h1 span{
   margin-bottom:28px;
 }
  
+.section h3{
+  text-align: center;
+  font-size:32px;
+  margin-bottom:28px;
+}
+
 .sub-heading{
   margin-top:50px;
 }
@@ -324,5 +330,141 @@ h1 span{
 .reveal.visible{
   opacity:1;
   transform:none;
+}
+
+/* Experiência  */
+
+.timeline-card{
+  background:var(--bg-card);
+  border:1px solid var(--border);
+  border-left:3px solid var(--accent);
+  padding:26px 28px;
+  border-radius:10px;
+  margin-top:20px;
+}
+
+.timeline-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:baseline;
+  flex-wrap:wrap;
+  gap:8px;
+}
+
+.timeline-header h3{
+  font-size:19px;
+}
+
+.timeline-period{
+  font-family:var(--font-mono);
+  font-size:13px;
+  color:var(--accent-2);
+  white-space:nowrap;
+}
+
+.timeline-org{
+  color:var(--accent);
+  font-size:14px;
+  margin-top:4px;
+  margin-bottom:14px;
+}
+
+.timeline-card ul{
+  list-style:none;
+  padding-left:0;
+}
+
+.timeline-card li{
+  color:var(--text-dim);
+  font-size:15px;
+  padding-left:18px;
+  position:relative;
+  margin-top:8px;
+}
+
+.timeline-card li::before{
+  content:'›';
+  color:var(--accent);
+  position:absolute;
+  left:0;
+}
+
+.timeline-desc{
+  font-size:15px;
+  margin-bottom:0;
+}
+
+/* skills (Tecnologias) */
+
+.skills{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.skill-item{
+  position:relative;
+  background:var(--bg-card);
+  border:1px solid var(--border);
+  padding:24px;
+  border-radius:10px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  transition:border-color 0.2s ease, transform 0.2s ease;
+}
+
+.skill-item:hover{
+  border-color:var(--accent);
+  transform:translateY(-3px);
+}
+
+.skill-icon{
+  width:36px;
+  height:36px;
+  object-fit:contain;
+}
+
+.skill-tooltip{
+  position:absolute;
+  bottom:calc(100% + 8px);
+  left:50%;
+  transform:translateX(-50%) translateY(4px);
+  background:var(--bg-card);
+  border:1px solid var(--border);
+  color:var(--text);
+  font-family:var(--font-mono);
+  font-size:12px;
+  padding:6px 12px;
+  border-radius:6px;
+  white-space:nowrap;
+  opacity:0;
+  visibility:hidden;
+  transition:opacity 0.2s ease, transform 0.2s ease;
+  pointer-events:none;
+}
+
+.skill-item:hover .skill-tooltip{
+  opacity:1;
+  visibility:visible;
+  transform:translateX(-50%) translateY(0);
+}
+
+/* ---------- RESPONSIVIDADE ---------- */
+
+@media (max-width: 768px){
+
+  .skills{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 480px){
+
+  .skills{
+    grid-template-columns: 1fr;
+  }
+
 }
 
