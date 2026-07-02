@@ -197,6 +197,29 @@ h1 span{
   object-fit:cover;
   display:block;
 }
+
+@media (max-width:900px){
+
+  .hero{
+    flex-direction:column-reverse;
+    text-align:center;
+    min-height:auto;
+    padding:60px 8%;
+  }
+
+  .hero-content{
+    max-width:100%;
+  }
+
+  .description{
+    max-width:100%;
+  }
+
+  .buttons{
+    justify-content:center;
+  }
+
+}
 /* ---------- TERMINAL (signature element) ---------- */
  
 .terminal{
@@ -291,6 +314,18 @@ h1 span{
     flex-shrink: 0;
 }
  
+@media (max-width:900px){
+
+  .about-container{
+    grid-template-columns:1fr;
+    text-align:center;
+  }
+
+  .about-text{
+    max-width:100%;
+  }
+
+}
 /* ---------- SECTIONS ---------- */
  
 .section{
@@ -301,13 +336,13 @@ h1 span{
  
 .section h2{
   font-size:32px;
-  margin-bottom:28px;
+  margin-bottom:40px;
 }
  
 .section h3{
   text-align: center;
   font-size:32px;
-  margin-bottom:28px;
+  margin-bottom:40px;
 }
 
 .sub-heading{
@@ -468,3 +503,156 @@ h1 span{
 
 }
 
+/* ---------- PROJETOS ---------- */
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 0.25s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent);
+  box-shadow:0 12px 30px rgba(0,0,0,.18);}
+
+/* imagem */
+
+.project-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+}
+
+/* conteúdo */
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 22px;
+}
+
+.project-tag {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--accent-2);
+  margin-bottom: 14px;
+}
+
+.project-card h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+
+.project-card p {
+  color: var(--text-dim);
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  flex: 1;
+}
+
+/* botões */
+
+.project-links {
+  display: flex;
+  gap: 12px;
+  margin-top: auto;
+}
+
+.project-links a {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 11px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+/* GitHub */
+
+.project-links a:first-child {
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  background: transparent;
+}
+
+/* Demo */
+
+.project-links a:last-child:not(:only-child) {
+  background: var(--accent);
+  color: var(--bg);
+  border: 1px solid var(--accent);
+}
+
+/* apenas um botão */
+
+.project-links a:only-child {
+  background: var(--accent);
+  color: var(--bg);
+  border: 1px solid var(--accent);
+}
+
+.project-links a:hover {
+  transform: translateY(-2px);
+}
+
+/* ---------- RESPONSIVIDADE ---------- */
+
+@media (max-width: 768px) {
+  .projects {
+    grid-template-columns: 1fr;
+  }
+
+  .project-image {
+    height: 180px;
+  }
+}
+
+
+/* responsive: necessário para o menu-toggle (hamburger)
+   funcionar no celular, já que sem isso ele fica com
+   display:none em qualquer tamanho de tela */
+
+@media (max-width:768px){
+  nav ul{
+    position:fixed;
+    top:68px;
+    right:0;
+    height:calc(100vh - 68px);
+    width:240px;
+    background:var(--bg-card);
+    flex-direction:column;
+    align-items:flex-start;
+    padding:30px;
+    gap:24px;
+    transform:translateX(100%);
+    transition:transform 0.3s ease;
+    border-left:1px solid var(--border);
+  }
+
+  nav ul.open{
+    transform:translateX(0);
+  }
+
+  .menu-toggle{
+    display:flex;
+  }
+}
