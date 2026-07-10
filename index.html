@@ -1,301 +1,306 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="Description" content="Portfólio de Gabriel Orlandi Portes">
-<title>Gabriel Orlandi Portes</title>
-<link rel="icon" type="image/png" href="assets/img/favicon.png">
-<link rel="stylesheet" href="style.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Description" content="Portfólio de Gabriel Orlandi Portes">
+  <title>Gabriel Orlandi Portes</title>
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header>
-  <nav>
-    <h2>Gabriel<span> </span>Orlandi</h2>
-    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-    <ul id="navList">
-      <li><a href="#inicio">Início</a></li>
-      <li><a href="#sobre">Sobre</a></li>
-      <li><a href="#experiencia">Experiência</a></li>
-      <li><a href="#projetos">Projetos</a></li>
-      <li><a href="#contato">Contato</a></li>
-    </ul>
-  </nav>
-</header>
-
-<main>
-
-  <section class="hero" id="inicio">
-    <div class="hero-content">
-      <p class="eyebrow">Prazer, meu nome é </p>
-      <h1>Gabriel <span>Orlandi Portes</span></h1>
-      <p class="description">
-        Formado em Análise e Desenvolvimento de Sistemas e atualmente cursando Tecnologia em Inteligência Artificial. <br>
-        <br>       
-        Aqui você encontra meus projetos, experiências e um pouco da minha trajetória.
-      </p>
-      <div class="buttons">
-        <a href="https://github.com/Gabriel-Orlandi-Portes" target="_blank" rel="noopener">
-            <img src="assets/img/icons/github.svg" alt="GitHub">
-                GitHub
-        </a>
-        <a href="https://www.linkedin.com/in/gabriel-orlandi-portes" target="_blank" rel="noopener">
-            <img src="assets/img/icons/linkedin.svg" alt="LinkedIn">
-                LinkedIn
-        </a>
-      </div>
-    </div>
-
-    <div class="hero-photo">
-        <img src="assets/img/foto.jpg" alt="Gabriel Orlandi">
-    </div>
-  </section>
-
-   <section id="sobre" class="section reveal">
-    <div class="about-container">
-        <div class="about-text">
-            <h2>Sobre</h2>
-            <p>
-                Atualmente atuo como assistente de Vendas Júnior na RETESP, trabalhando com indicadores comerciais,
-                relatórios e dashboards em Power BI, voltados ao apoio da tomada de decisão.
-            </p>
-
-            <p>
-                Minha trajetória na tecnologia começou ainda durante o ensino médio, com formações técnicas integradas. Em 2021, concluí o curso profissionalizante de Auxiliar de Desenvolvimento de Websites e, em 2022, o curso de Auxiliar de Informática para Internet, experiências que despertaram meu interesse pelo desenvolvimento e pela área de tecnologia.
-            </p>
-
-            <p>    
-                Esse interesse me levou à graduação em Análise e Desenvolvimento de Sistemas pela FECAP. Atualmente, curso Tecnologia em Inteligência Artificial na FMU, buscando aprofundar meus conhecimentos em análise de dados, automação e aplicações de IA. Além da formação acadêmica, procuro manter uma rotina constante de estudos, certificações e projetos pessoais para evoluir continuamente como profissional.
-            </p>
-        </div>
-
-        <div class="terminal" aria-hidden="true">
-            <div class="terminal-bar">
-                <span class="dot red"></span>
-                <span class="dot yellow"></span>
-                <span class="dot green"></span>
-                <span class="terminal-title">
-                    Sobre.py
-                </span>
-            </div>
-            <div class="terminal-body">
-                <p class="line">
-                    <span class="prompt">$</span>
-                    python Sobre.py
-                </p>
-                <p class="line out" id="typedLine1"></p>
-                <p class="line out" id="typedLine2"></p>
-                <p class="line out" id="typedLine3"></p>
-                <p class="line out" id="typedLine4"></p>
-                <p class="line cursor-line">
-                    <span class="prompt">$</span>
-                    <span class="cursor"></span>
-                </p>
-            </div>
-        </div>
-    </div>
-   </section>
-
-  <section id="experiencia" class="section reveal">
-    <h2>Experiência</h2>
-
-    <div class="timeline-card">
-      <div class="timeline-header">
-        <h3>Assistente de Vendas Júnior</h3>
-        <span class="timeline-period">ago 2025 — atual</span>
-      </div>
-      <p class="timeline-org">RETESP Ltda · São Paulo, SP</p>
-      <ul>
-        <li>Análise de indicadores comerciais e respostas de cotações</li>
-        <li>Criação de relatórios estratégicos para tomada de decisão</li>
-        <li>Desenvolvimento de dashboards em Power BI</li>
-        <li>Automação e organização de bases de dados com Excel e Python</li>
-      </ul>
-    </div>
-
-    <section class="section reveal">
-    <h3>Tecnologias</h3>
-    <div class="skills">
-        <div class="skill-item">
-        <img src="assets/img/icons/python.svg" alt="Python" class="skill-icon">
-        <span class="skill-tooltip">Python</span>
-        </div>
-        <div class="skill-item">
-        <img src="assets/img/icons/sql.svg" alt="SQL" class="skill-icon">
-        <span class="skill-tooltip">SQL</span>
-        </div>
-        <div class="skill-item">
-        <img src="assets/img/icons/power-bi.svg" alt="Power BI" class="skill-icon">
-        <span class="skill-tooltip">Power BI</span>
-        </div>
-        <div class="skill-item">
-        <img src="assets/img/icons/Pandas.svg" alt="Pandas" class="skill-icon">
-        <span class="skill-tooltip">Pandas</span>
-        </div>
-        <div class="skill-item">
-        <img src="assets/img/icons/numpy.svg" alt="NumPy" class="skill-icon">
-        <span class="skill-tooltip">NumPy</span>
-        </div>
-        <div class="skill-item">
-        <img src="assets/img/icons/html.svg" alt="HTML" class="skill-icon">
-        <span class="skill-tooltip">HTML</span>
-        </div>
-        <div class="skill-item">
-        <img src="assets/img/icons/css.svg" alt="CSS" class="skill-icon">
-        <span class="skill-tooltip">CSS</span>
-        </div>
-        <div class="skill-item">
-        <img src="assets/img/icons/figma.svg" alt="Figma" class="skill-icon">
-        <span class="skill-tooltip">Figma</span>
-        </div>
-        <div class="skill-item">
-        <img src="assets/img/icons/git.svg" alt="Git e GitHub" class="skill-icon">
-        <span class="skill-tooltip">Git / GitHub</span>
-        </div>
-        </div>
-    </div>
-    </section>
-
- <section id="projetos" class="section reveal">
-  <h3>Projetos</h3>
-  <div class="projects">
-
-    <div class="project-card">
-      <img src="assets/img/banner-analise-copa.png" alt="Projeto Álbum Copa" class="project-image">
-      <div class="project-content">
-        <span class="project-tag">Python • Pandas • NumPy • Matplotlib • Git</span>
-        <h3>Análise Álbum Copa do Mundo 2026</h3>
-        <p>Simulação do custo estimado para completar o álbum da Copa utilizando análise estatística em Python.</p>
-        <div class="project-links">
-          <a href="https://github.com/Gabriel-Orlandi-Portes/Analise-Album-Copa2026" target="_blank" rel="noopener">GitHub</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <img src="assets/img/Analise-brasileiro.jpg" alt="Projeto análise do Campeonato Brasileiro" class="project-image">
-      <div class="project-content">
-        <span class="project-tag">Python • Pandas • Matplotlib • Colab • Kaggle </span>
-        <h3>Análise de Dados com Python</h3>
-        <p>Projeto com o objetivo de realizar uma análise exploratória de dados utilizando informações da base de dados do Kaggle das partidas do Campeonato Brasileiro Série A de 2024.</p>
-        <div class="project-links">
-          <a href="https://github.com/Gabriel-Orlandi-Portes/Analise-Brasileiro2024" target="_blank" rel="noopener">GitHub</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <img src="assets/img/dashboard-01.png" alt="Power BI" class="project-image">
-      <div class="project-content">
-        <span class="project-tag">Power BI • Excel</span>
-        <h3>Relatório Gerencial de Vendas - DIO</h3>
-        <p>O objetivo foi construir um relatório financeiro interativo utilizando a base Financial Sample, explorando recursos do Power BI para transformar dados em informações relevantes para a tomada de decisão.</p>
-        <div class="project-links">
-          <a href="https://github.com/Gabriel-Orlandi-Portes/Relatorio-Gerencial-de-Vendas" target="_blank" rel="noopener">GitHub</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <img src="assets/img/power-bi.png" alt="Power BI" class="project-image">
-      <div class="project-content">
-        <span class="project-tag">Power BI • Excel</span>
-        <h3>Dashboard de Vendas</h3>
-        <p>Dashboard interativo de vendas desenvolvido no Power BI, conectado a uma planilha de dados que atualiza as métricas automaticamente conforme novos registros são inseridos</p>
-        <div class="project-links">
-          <a href="https://github.com/Gabriel-Orlandi-Portes/Dashboard-Vendas" target="_blank" rel="noopener">GitHub</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <img src="assets/img/Agricultura.jpg" alt="CultivAção" class="project-image">
-      <div class="project-content">
-        <span class="project-tag">React.js • Node.js • Mysql</span>
-        <h3>CultivAção - Agricultura Urbana</h3>
-        <p>O CultivAção é uma aplicação desenvolvida em React.js com o objetivo de promover a sustentabilidade e incentivar a agricultura urbana em pequenos espaços.</p>
-        <div class="project-links">
-          <a href="https://github.com/Gabriel-Orlandi-Portes/Projetos-academicos-FECAP/tree/main/02-Website%20CultivA%C3%A7%C3%A3o" target="_blank" rel="noopener">GitHub</a>
-          <a href="https://cgkmcultivacao.netlify.app/" target="_blank" rel="noopener">Acessar</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <img src="assets/img/esp32.jpg" alt="ESP32-Cam" class="project-image">
-      <div class="project-content">
-        <span class="project-tag">Arduíno • C++ • API Telegram</span>
-        <h3>Monitoramento com ESP-32 CAM</h3>
-        <p>Desenvolvimento de um sistema de segurança residencial de baixo custo utilizando o microcontrolador ESP32-CAM para monitorar a presença de pessoas em um ambiente e enviar alertas instantâneos via API do Telegram.</p>
-        <div class="project-links">
-          <a href="https://github.com/Gabriel-Orlandi-Portes/Projetos-academicos-FECAP/tree/main/01-%20Monitoramento%20com%20ESP-32%20CAM" target="_blank" rel="noopener">GitHub</a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-</main>
-<footer id="contato">
-  <div class="footer-content">
-
-    <div class="footer-brand">
-      <h3>Gabriel<span> </span>Orlandi</h3>
-    </div>
-
-    <div class="footer-nav">
-      <h4>Navegação</h4>
-      <ul>
+  <header>
+    <nav>
+      <h2>Gabriel<span> </span>Orlandi</h2>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul id="navList">
         <li><a href="#inicio">Início</a></li>
         <li><a href="#sobre">Sobre</a></li>
         <li><a href="#experiencia">Experiência</a></li>
         <li><a href="#projetos">Projetos</a></li>
         <li><a href="#contato">Contato</a></li>
       </ul>
-    </div>
+    </nav>
+  </header>
 
-    <div class="footer-contact">
-      <h4>Contato</h4>
-      <ul>
-        <li>
-          <a href="mailto:gabrilorlandi@gmail.com">
-            <img src="assets/img/icons/email.svg" alt="" class="footer-icon">
-            Email
-          </a>
-        </li>
-        <li>
+  <main>
+
+    <section class="hero" id="inicio">
+      <div class="hero-content">
+        <p class="eyebrow">Prazer, meu nome é</p>
+        <h1>Gabriel <span>Orlandi Portes</span></h1>
+        <p class="description">
+          Formado em Análise e Desenvolvimento de Sistemas e atualmente cursando Tecnologia em Inteligência Artificial.
+          <br><br>
+          Aqui você encontra meus projetos, experiências e um pouco da minha trajetória.
+        </p>
+        <div class="buttons">
           <a href="https://github.com/Gabriel-Orlandi-Portes" target="_blank" rel="noopener">
-            <img src="assets/img/icons/github.svg" alt="" class="footer-icon">
+            <img src="assets/img/icons/github.svg" alt="GitHub">
             GitHub
           </a>
-        </li>
-        <li>
           <a href="https://www.linkedin.com/in/gabriel-orlandi-portes" target="_blank" rel="noopener">
-            <img src="assets/img/icons/linkedin.svg" alt="" class="footer-icon">
+            <img src="assets/img/icons/linkedin.svg" alt="LinkedIn">
             LinkedIn
           </a>
-        </li>
-        <li>
-          <a href="https://wa.me/5511954042352" target="_blank" rel="noopener">
-            <img src="assets/img/icons/whatsapp.svg" alt="" class="footer-icon">
-            WhatsApp
-          </a>
-        </li>
-      </ul>
+        </div>
+      </div>
+
+      <div class="hero-photo">
+        <img src="assets/img/foto.jpg" alt="Gabriel Orlandi">
+      </div>
+    </section>
+
+    <section id="sobre" class="section reveal">
+      <div class="about-container">
+        <div class="about-text">
+          <h2>Sobre</h2>
+          <p>
+            Atualmente atuo como assistente de Vendas Júnior na RETESP, trabalhando com indicadores comerciais,
+            relatórios e dashboards em Power BI, voltados ao apoio da tomada de decisão.
+          </p>
+          <p>
+            Minha trajetória na tecnologia começou ainda durante o ensino médio, com formações técnicas integradas.
+            Em 2021, concluí o curso profissionalizante de Auxiliar de Desenvolvimento de Websites e, em 2022,
+            o curso de Auxiliar de Informática para Internet, experiências que despertaram meu interesse pelo
+            desenvolvimento e pela área de tecnologia.
+          </p>
+          <p>
+            Esse interesse me levou à graduação em Análise e Desenvolvimento de Sistemas pela FECAP. Atualmente,
+            curso Tecnologia em Inteligência Artificial na FMU, buscando aprofundar meus conhecimentos em análise
+            de dados, automação e aplicações de IA. Além da formação acadêmica, procuro manter uma rotina constante
+            de estudos, certificações e projetos pessoais para evoluir continuamente como profissional.
+          </p>
+        </div>
+
+        <div class="terminal" aria-hidden="true">
+          <div class="terminal-bar">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="terminal-title">Sobre.py</span>
+          </div>
+          <div class="terminal-body">
+            <p class="line">
+              <span class="prompt">$</span>
+              python Sobre.py
+            </p>
+            <p class="line out" id="typedLine1"></p>
+            <p class="line out" id="typedLine2"></p>
+            <p class="line out" id="typedLine3"></p>
+            <p class="line out" id="typedLine4"></p>
+            <p class="line cursor-line">
+              <span class="prompt">$</span>
+              <span class="cursor"></span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experiencia" class="section reveal">
+      <h2>Experiência</h2>
+
+      <div class="timeline-card">
+        <div class="timeline-header">
+          <h3>Assistente de Vendas Júnior</h3>
+          <span class="timeline-period">ago 2025 — atual</span>
+        </div>
+        <p class="timeline-org">RETESP Ltda · São Paulo, SP</p>
+        <ul>
+          <li>Análise de indicadores comerciais e respostas de cotações</li>
+          <li>Criação de relatórios estratégicos para tomada de decisão</li>
+          <li>Desenvolvimento de dashboards em Power BI</li>
+          <li>Automação e organização de bases de dados com Excel e Python</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <h3>Tecnologias</h3>
+      <div class="skills">
+        <div class="skill-item">
+          <img src="assets/img/icons/python.svg" alt="Python" class="skill-icon">
+          <span class="skill-tooltip">Python</span>
+        </div>
+        <div class="skill-item">
+          <img src="assets/img/icons/sql.svg" alt="SQL" class="skill-icon">
+          <span class="skill-tooltip">SQL</span>
+        </div>
+        <div class="skill-item">
+          <img src="assets/img/icons/power-bi.svg" alt="Power BI" class="skill-icon">
+          <span class="skill-tooltip">Power BI</span>
+        </div>
+        <div class="skill-item">
+          <img src="assets/img/icons/Pandas.svg" alt="Pandas" class="skill-icon">
+          <span class="skill-tooltip">Pandas</span>
+        </div>
+        <div class="skill-item">
+          <img src="assets/img/icons/numpy.svg" alt="NumPy" class="skill-icon">
+          <span class="skill-tooltip">NumPy</span>
+        </div>
+        <div class="skill-item">
+          <img src="assets/img/icons/html.svg" alt="HTML" class="skill-icon">
+          <span class="skill-tooltip">HTML</span>
+        </div>
+        <div class="skill-item">
+          <img src="assets/img/icons/css.svg" alt="CSS" class="skill-icon">
+          <span class="skill-tooltip">CSS</span>
+        </div>
+        <div class="skill-item">
+          <img src="assets/img/icons/figma.svg" alt="Figma" class="skill-icon">
+          <span class="skill-tooltip">Figma</span>
+        </div>
+        <div class="skill-item">
+          <img src="assets/img/icons/git.svg" alt="Git e GitHub" class="skill-icon">
+          <span class="skill-tooltip">Git / GitHub</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="projetos" class="section reveal">
+      <h3>Projetos</h3>
+      <div class="projects">
+
+        <div class="project-card">
+          <img src="assets/img/banner-analise-copa.png" alt="Projeto Álbum Copa" class="project-image">
+          <div class="project-content">
+            <span class="project-tag">Python • Pandas • NumPy • Matplotlib • Git</span>
+            <h3>Análise Álbum Copa do Mundo 2026</h3>
+            <p>Simulação do custo estimado para completar o álbum da Copa utilizando análise estatística em Python.</p>
+            <div class="project-links">
+              <a href="https://github.com/Gabriel-Orlandi-Portes/Analise-Album-Copa2026" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="assets/img/Analise-brasileiro.jpg" alt="Projeto análise do Campeonato Brasileiro" class="project-image">
+          <div class="project-content">
+            <span class="project-tag">Python • Pandas • Matplotlib • Colab • Kaggle</span>
+            <h3>Análise de Dados com Python</h3>
+            <p>Projeto com o objetivo de realizar uma análise exploratória de dados utilizando informações da base de dados do Kaggle das partidas do Campeonato Brasileiro Série A de 2024.</p>
+            <div class="project-links">
+              <a href="https://github.com/Gabriel-Orlandi-Portes/Analise-Brasileiro2024" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="assets/img/dashboard-01.png" alt="Relatório Gerencial de Vendas" class="project-image">
+          <div class="project-content">
+            <span class="project-tag">Power BI • Excel</span>
+            <h3>Relatório Gerencial de Vendas - DIO</h3>
+            <p>O objetivo foi construir um relatório financeiro interativo utilizando a base Financial Sample, explorando recursos do Power BI para transformar dados em informações relevantes para a tomada de decisão.</p>
+            <div class="project-links">
+              <a href="https://github.com/Gabriel-Orlandi-Portes/Relatorio-Gerencial-de-Vendas" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="assets/img/power-bi.png" alt="Power BI" class="project-image">
+          <div class="project-content">
+            <span class="project-tag">Power BI • Excel</span>
+            <h3>Dashboard de Vendas</h3>
+            <p>Dashboard interativo de vendas desenvolvido no Power BI, conectado a uma planilha de dados que atualiza as métricas automaticamente conforme novos registros são inseridos.</p>
+            <div class="project-links">
+              <a href="https://github.com/Gabriel-Orlandi-Portes/Dashboard-Vendas" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="assets/img/Agricultura.jpg" alt="CultivAção" class="project-image">
+          <div class="project-content">
+            <span class="project-tag">React.js • Node.js • MySQL</span>
+            <h3>CultivAção - Agricultura Urbana</h3>
+            <p>O CultivAção é uma aplicação desenvolvida em React.js com o objetivo de promover a sustentabilidade e incentivar a agricultura urbana em pequenos espaços.</p>
+            <div class="project-links">
+              <a href="https://github.com/Gabriel-Orlandi-Portes/Projetos-academicos-FECAP/tree/main/02-Website%20CultivA%C3%A7%C3%A3o" target="_blank" rel="noopener">GitHub</a>
+              <a href="https://cgkmcultivacao.netlify.app/" target="_blank" rel="noopener">Acessar</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="assets/img/esp32.jpg" alt="ESP32-Cam" class="project-image">
+          <div class="project-content">
+            <span class="project-tag">Arduíno • C++ • API Telegram</span>
+            <h3>Monitoramento com ESP-32 CAM</h3>
+            <p>Desenvolvimento de um sistema de segurança residencial de baixo custo utilizando o microcontrolador ESP32-CAM para monitorar a presença de pessoas em um ambiente e enviar alertas instantâneos via API do Telegram.</p>
+            <div class="project-links">
+              <a href="https://github.com/Gabriel-Orlandi-Portes/Projetos-academicos-FECAP/tree/main/01-%20Monitoramento%20com%20ESP-32%20CAM" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="contato">
+    <div class="footer-content">
+
+      <div class="footer-brand">
+        <h3>Gabriel<span> </span>Orlandi</h3>
+      </div>
+
+      <div class="footer-nav">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#experiencia">Experiência</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contato</h4>
+        <ul>
+          <li>
+            <a href="mailto:gabrilorlandi@gmail.com">
+              <img src="assets/img/icons/email.svg" alt="" class="footer-icon">
+              Email
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/Gabriel-Orlandi-Portes" target="_blank" rel="noopener">
+              <img src="assets/img/icons/github.svg" alt="" class="footer-icon">
+              GitHub
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/gabriel-orlandi-portes" target="_blank" rel="noopener">
+              <img src="assets/img/icons/linkedin.svg" alt="" class="footer-icon">
+              LinkedIn
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.me/5511954042352" target="_blank" rel="noopener">
+              <img src="assets/img/icons/whatsapp.svg" alt="" class="footer-icon">
+              WhatsApp
+            </a>
+          </li>
+        </ul>
+      </div>
+
     </div>
 
-  </div>
+    <div class="footer-bottom">
+      <p>Copyright © 2026 | Gabriel Orlandi Portes | Todos os direitos reservados.</p>
+    </div>
+  </footer>
 
-  <div class="footer-bottom">
-    <p>Copyright © 2026 | Gabriel Orlandi Portes | Todos os direitos reservados.</p>
-  </div>
-</footer>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
