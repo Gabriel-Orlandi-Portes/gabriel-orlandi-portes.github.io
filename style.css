@@ -663,7 +663,7 @@ footer{
 .footer-contact h4{
   font-family:var(--font-mono);
   font-size:13px;
-  color:var(--accent-2);
+  color:var(--accent);
   margin-bottom:18px;
   text-transform:uppercase;
   letter-spacing:0.04em;
