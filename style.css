@@ -707,6 +707,43 @@ footer{
   font-size:13px;
 }
 
+/* copiar e-mail */
+
+.footer-email{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  flex-wrap:nowrap;
+}
+
+.footer-email a{
+  white-space:nowrap;
+}
+
+.copy-email-btn{
+  background:transparent;
+  border:1px solid var(--border);
+  color:var(--text-dim);
+  font-family:var(--font-mono);
+  font-size:12px;
+  padding:4px 10px;
+  border-radius:6px;
+  cursor:pointer;
+  transition:border-color 0.2s ease, color 0.2s ease;
+    flex-shrink:0;
+
+}
+
+.copy-email-btn:hover{
+  border-color:var(--accent);
+  color:var(--accent);
+}
+
+.copy-email-btn.copied{
+  border-color:var(--accent);
+  color:var(--accent);
+}
+
 @media (max-width:768px){
   .footer-content{
     grid-template-columns:1fr;

@@ -47,6 +47,23 @@ if (menuToggle && navList) {
   });
 }
 
+// ---------- Copiar e-mail ----------
+const copyEmailBtn = document.getElementById("copyEmailBtn");
+
+if (copyEmailBtn) {
+  copyEmailBtn.addEventListener("click", () => {
+    navigator.clipboard.writeText("gabrilorlandi@gmail.com").then(() => {
+      copyEmailBtn.textContent = "Copiado!";
+      copyEmailBtn.classList.add("copied");
+
+      setTimeout(() => {
+        copyEmailBtn.textContent = "Copiar";
+        copyEmailBtn.classList.remove("copied");
+      }, 2000);
+    });
+  });
+}
+
 // ---------- Scroll reveal ----------
 const revealEls = document.querySelectorAll(".reveal");
 
