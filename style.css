@@ -61,6 +61,10 @@ nav{
   margin:0 auto;
 }
 
+nav a{
+  text-decoration: none;
+}
+
 nav h2{
   font-size:20px;
   letter-spacing:0.02em;
